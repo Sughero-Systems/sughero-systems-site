@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sughero Systems — Governance infrastructure for adaptive systems</title>
+  <meta name="description" content="Sughero Systems builds runtime governance infrastructure for adaptive systems — systems that learn, adapt, and persist. Home of the CHURPRIMO runtime governance architecture.">
+  <meta property="og:title" content="Sughero Systems">
+  <meta property="og:description" content="Governance infrastructure for adaptive systems.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <span class="wordmark">Sughero&nbsp;Systems</span>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#churprimo">CHURPRIMO</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="kicker reveal">Sughero Systems</p>
+      <h1 id="hero-title" class="reveal">Governance infrastructure for systems that learn, adapt, and&nbsp;persist.</h1>
+      <p class="lede reveal">Intelligent systems no longer simply execute instructions. They learn, decide, and act. Sughero Systems builds the infrastructure that allows such systems to be governed while they operate — not audited after they fail.</p>
+      <div class="hero-actions reveal">
+        <a class="button" href="#work">Learn more</a>
+        <a class="link-quiet" href="#contact">Contact</a>
+      </div>
+    </section>
+
+    <!-- What We Build -->
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="section-label reveal">01 — What we build</div>
+      <h2 id="work-title" class="reveal">Adaptive systems evolve. Governance must evolve with&nbsp;them.</h2>
+      <div class="prose reveal">
+        <p>Sughero Systems develops runtime governance infrastructure: systems that continuously observe the behavior of adaptive systems and help preserve operational integrity during adaptation.</p>
+        <p>Governance, in this view, is not a review process appended to a system after the fact. It is a property of the running system itself — present at execution, aware of change, and capable of maintaining continuity as the system it governs continues to learn.</p>
+      </div>
+    </section>
+
+    <!-- Why It Matters -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="section-label reveal">02 — Why it matters</div>
+      <h2 id="why-title" class="reveal">Governance can no longer be an&nbsp;afterthought.</h2>
+      <div class="progression reveal" role="presentation">
+        <div class="progression-step">
+          <span class="progression-era">Then</span>
+          <p>Traditional software executes instructions.</p>
+        </div>
+        <div class="progression-step">
+          <span class="progression-era">Now</span>
+          <p>Modern systems make decisions.</p>
+        </div>
+        <div class="progression-step">
+          <span class="progression-era">Next</span>
+          <p>Tomorrow&rsquo;s systems will coordinate with other systems.</p>
+        </div>
+      </div>
+      <div class="prose reveal">
+        <p>Each step widens the distance between what a system was designed to do and what it is doing now. Oversight applied after failure cannot close that distance. Governance has to exist at runtime.</p>
+      </div>
+    </section>
+
+    <!-- CHURPRIMO -->
+    <section id="churprimo" class="section" aria-labelledby="churprimo-title">
+      <div class="section-label reveal">03 — Architecture</div>
+      <h2 id="churprimo-title" class="reveal">CHURPRIMO</h2>
+      <div class="prose reveal">
+        <p>CHURPRIMO is the runtime governance architecture developed at Sughero Systems. It provides the structural layer through which an adaptive system&rsquo;s behavior is observed, evaluated, and held within defined bounds while the system continues to operate.</p>
+        <p>It is designed as infrastructure rather than product: a foundation on which governed adaptation becomes an ordinary property of intelligent systems. Patent pending.</p>
+      </div>
+      <figure class="diagram reveal" aria-hidden="true">
+        <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" role="img">
+          <!-- governed system: three nodes -->
+          <line x1="160" y1="150" x2="320" y2="150" class="d-line"/>
+          <line x1="320" y1="150" x2="480" y2="150" class="d-line"/>
+          <circle cx="160" cy="150" r="7" class="d-node"/>
+          <circle cx="320" cy="150" r="7" class="d-node"/>
+          <circle cx="480" cy="150" r="7" class="d-node"/>
+          <!-- runtime governance layer: arc above -->
+          <path d="M 120 150 C 120 60, 520 60, 520 150" fill="none" class="d-arc"/>
+          <circle cx="320" cy="82.5" r="5" class="d-accent"/>
+          <!-- observation lines -->
+          <line x1="320" y1="90" x2="320" y2="140" class="d-observe"/>
+          <line x1="230" y1="98" x2="164" y2="142" class="d-observe"/>
+          <line x1="410" y1="98" x2="476" y2="142" class="d-observe"/>
+          <text x="320" y="196" text-anchor="middle" class="d-label">system in operation</text>
+          <text x="320" y="48" text-anchor="middle" class="d-label">runtime governance layer</text>
+        </svg>
+        <figcaption>Governance as a continuous layer over a running system.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Principles -->
+    <section class="section" aria-labelledby="principles-title">
+      <div class="section-label reveal">04 — Principles</div>
+      <h2 id="principles-title" class="reveal">Foundations</h2>
+      <dl class="principles reveal">
+        <div><dt>Continuity</dt><dd>A system that changes should remain recognizably itself.</dd></div>
+        <div><dt>Integrity</dt><dd>Operational soundness is preserved, not assumed.</dd></div>
+        <div><dt>Governance</dt><dd>Oversight belongs inside the running system, not appended after failure.</dd></div>
+        <div><dt>Adaptation</dt><dd>Change is not the risk; ungoverned change is.</dd></div>
+        <div><dt>Transparency</dt><dd>What a system does should be observable while it does it.</dd></div>
+        <div><dt>Provenance</dt><dd>Every state a system reaches should be traceable to how it arrived there.</dd></div>
+      </dl>
+    </section>
+
+    <!-- The Thinking Behind Sughero Systems -->
+    <section id="thinking" class="section" aria-labelledby="thinking-title">
+      <div class="section-label reveal">05 — Origins</div>
+      <h2 id="thinking-title" class="reveal">The thinking behind Sughero&nbsp;Systems</h2>
+      <div class="prose reveal">
+        <p>Sughero Systems was not founded because artificial intelligence became popular. It exists because adaptive systems require governance that preserves continuity through change — and systems that learn eventually change in ways their original oversight cannot follow. AI is simply the first place where that need has become impossible to ignore.</p>
+      </div>
+      <div class="portrait reveal">
+        <img src="assets/kathryn.jpg" alt="Portrait of Kathryn Sughero" width="800" height="800" loading="lazy">
+        <p class="portrait-name">Kathryn Sughero</p>
+        <p class="portrait-role">Founder &amp; Systems Architect</p>
+      </div>
+    </section>
+
+    <!-- Current Work -->
+    <section class="section" aria-labelledby="status-title">
+      <div class="section-label reveal">06 — Current work</div>
+      <h2 id="status-title" class="reveal">Status</h2>
+      <ul class="status reveal">
+        <li>Runtime governance research</li>
+        <li>Patent pending</li>
+        <li>Agentic systems</li>
+        <li>Infrastructure development</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+      <div class="section-label reveal">07 — Contact</div>
+      <h2 id="contact-title" class="reveal">Correspondence</h2>
+      <p class="prose reveal"><a class="contact-link" href="mailto:team@sugherosystems.com">team@sugherosystems.com</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Sughero Systems</span>
+    <span>Governance infrastructure for adaptive systems</span>
+  </footer>
+
+  <script>
+    // Subtle scroll reveal; respects reduced-motion.
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var els = document.querySelectorAll('.reveal');
+      if (reduce || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
