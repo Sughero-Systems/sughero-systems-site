@@ -256,15 +256,24 @@ h2 {
 }
 
 .status li {
-  padding-block: 1rem;
   border-bottom: 1px solid var(--hairline);
   color: var(--graphite);
+}
+
+.status summary {
+  list-style: none;
+  cursor: pointer;
+  padding-block: 1rem;
   display: flex;
   align-items: center;
   gap: 0.875rem;
+  transition: color 160ms ease;
 }
+.status summary::-webkit-details-marker { display: none; }
+.status summary:hover,
+.status summary:focus-visible { color: var(--ink); }
 
-.status li::before {
+.status summary::before {
   content: "";
   width: 6px;
   height: 6px;
@@ -272,6 +281,37 @@ h2 {
   background: var(--accent);
   flex: none;
 }
+
+.status summary::after {
+  content: "+";
+  margin-left: auto;
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1;
+  color: var(--faint);
+  transition: transform 200ms ease;
+}
+.status details[open] summary::after { transform: rotate(45deg); }
+
+.status-detail {
+  padding: 0.25rem 0 1.5rem 1.375rem;
+  font-size: 0.9375rem;
+  color: var(--graphite);
+}
+.status-detail p + p { margin-top: 0.875rem; }
+
+.claims {
+  margin-top: 1.25rem;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+}
+.claims strong { font-weight: 500; color: var(--ink); }
+
+/* ---------- CHURPRIMO org link ---------- */
+
+.churprimo-org { margin-top: 1.25rem; font-size: 0.875rem; }
 
 /* ---------- Contact ---------- */
 
